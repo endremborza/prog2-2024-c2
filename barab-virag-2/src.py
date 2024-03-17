@@ -6,7 +6,6 @@ import numpy as np
 
 query_df = pd.read_csv("query.csv")
 query_df = pl.DataFrame(query_df)
-meta_df = pl.read_parquet("compute_workfile.parquet")
 with open("dtypes.npy","rb") as file:
     dtypes = np.load(file,allow_pickle=True)
 
