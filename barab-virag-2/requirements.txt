@@ -1,0 +1,6 @@
+pyarrow
+fastparquet
+pandas
+scipy
+numpy
+polars
