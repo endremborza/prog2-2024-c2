@@ -1,0 +1,7 @@
+typer
+pandas
+scikit-learn
+flask
+scipy
+requests
+sklearn
