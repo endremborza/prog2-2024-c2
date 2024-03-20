@@ -99,7 +99,7 @@ def main(
             for (base_l, comp_l) in zip(base_r, comp_r):
                 base_d = dict(zip(base_cols, base_l))
                 comp_d = dict(zip(comp_cols, comp_l))
-                assert round_d(base_d) == round_d(comp_d), f"{base_l}, {comp_l}"
+                assert round_d(base_d) == round_d(comp_d), f"{base_d}, {comp_d}"
     Path(f"{RUNDIR}/{time.time()}-{solution}").write_text(",".join(map(str, out)))
     print("\n\nsuccess!", f"solution: {solution}")
     print(f"validated with {comparison}" if comparison else "non-validated")
